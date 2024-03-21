@@ -1,0 +1,158 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      Cat Image Exercise
+    </title>
+    <style>
+      .thumbnail1 {
+        width: 200px;
+        border-radius: 8px;
+      }
+
+      .thumbnail2 {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: right;
+      }
+
+      .thumbnail3 {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 100px;
+      }
+
+      .thumbnail4 {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 25px;
+        vertical-align: middle;
+      }
+
+      .search-bar1 {
+        height: 40px;
+        padding-left: 12px;
+        font-size: 20px;
+        border-radius: 10px;
+        border-color: grey;
+        border-style: solid;
+        margin-bottom: 40px;
+      }
+
+      .search-bar2 {
+        height: 40px;
+        padding-left: 12px;
+        width: 330px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+      }
+
+      .search-bar3 {
+        height: 40px;
+        padding-left: 12px;
+        font-size: 20px;
+        border-radius: 10px;
+        border-color: grey;
+        border-style: solid;
+        margin-bottom: 0;
+      }
+
+      .search-bar4 {
+        height: 40px;
+        padding-left: 12px;
+        padding-right: 80px;
+        font-size: 16px;
+        border: none;
+        vertical-align: middle;
+      }
+
+      .greytext {
+        color: grey;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      .agree-button {
+        background-color: rgb(41,93,169);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-right: 8px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        transition: background-color 0.15s;
+      }
+
+      .agree-button:hover {
+        background-color: rgb(0,54,112);
+      }
+
+      .tweet-button {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+        vertical-align: middle;
+      }
+
+      .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="thumbnail1" src="cat-image.jpg">
+
+    <img class="thumbnail2" src="cat-image.jpg">
+
+    <img class="thumbnail3" src="cat-image.jpg">
+    <p>
+      <input class="search-bar1" type="text" placeholder="Search">
+    </p>
+    <p>
+      <input class="search-bar2" type="text" placeholder="Search Google or type a URL">
+    </p>
+    <p class="greytext">Email</p>
+    <p>
+      <input class="search-bar3" type="text">
+    </p>
+    <p class="greytext">
+      By clicking Agree &amp; Join, you agree to the Privacy Policy.
+    </p>
+
+    <button class="agree-button">
+      Agree &amp; Join
+    </button>
+
+      <p></p>
+
+    <img class="thumbnail4" src="cat-image.jpg">
+    <input class="search-bar4" type="text" placeholder="What's happening?">
+    <button class="tweet-button">
+      Tweet
+    </button>
+  </body>
+</html>

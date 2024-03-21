@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Flexbox Practice
+    </title>
+
+    <style>
+      .flex-notif {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px;
+      }
+
+      .blue-box {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: rgb(65,108,230);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 13px;
+      }
+
+      .header {
+        margin-top: 40px;
+        height: 55px;
+        background-color: rgb(98,71,144);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .middle-section {
+        flex: 1;
+        max-width: 500px;
+      }
+
+
+      .thumbnail4, .thumbnail5 {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      .thumbnail4 {
+        object-position: right;
+      }
+
+      .thumbnail5 {
+        object-position: center;
+      }
+
+      .thumbnail6 {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+        vertical-align: middle;
+        object-position: right;
+      }
+
+      .follow-button {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+        vertical-align: middle;
+      }
+
+      .follow-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .account-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .account-row2 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body style="padding-bottom: 1000px;
+  font-family: Arial, Helvetica, sans-serif;">
+    <div style="
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="background-color: lightblue;">
+        div1 text
+      </div>
+      <div style="background-color: lightpink;">
+        div2 <p>text</p>
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightpink;
+      flex: 1;">
+        flex 1
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightpink;
+      flex: 1;">
+        flex 1
+      </div>
+      <div style="
+      background-color: lightblue;
+      flex: 2;">
+        flex 2
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightpink;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightpink;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+    </div>
+
+
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightpink;
+      width: 100px;">
+        100px
+      </div>
+      <div style="
+      background-color: lightblue;
+      width: 100px;">
+        100px
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 200px;">
+        200px
+      </div>
+      <div style="background-color: lightpink;
+      width: 75px;">
+        75px
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      ">
+      <div style="
+      background-color: lightblue;
+      width: 50px;">
+        50px
+      </div>
+      <div style="
+      background-color: lightpink;
+      flex: 1;">
+        flex 1
+      </div>
+      <div style="
+      background-color: lightblue;
+      width: 75px;">
+        75px
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      ">
+      <div style="
+      background-color: lightblue;">
+        item1
+      </div>
+      <div style="
+      background-color: lightpink;">
+        item2
+      </div>
+      <div style="
+      background-color: lightblue;">
+        item3
+      </div>
+      <div style="
+      background-color: lightpink;">
+        item4
+      </div>
+    </div>
+
+
+
+    <div style="
+      margin-top: 30px;
+      height: 50px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: grey;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;">
+      <div style="
+      background-color: lightpink;">
+        item1
+      </div>
+      <div style="
+      background-color: lightpink;">
+        item2
+      </div>
+    </div>
+
+
+    <div style="
+    margin-top: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-radius: 5px;">
+      <div class="flex-notif">
+        <div style="font-size: 17px;">
+          Home
+        </div>
+        <div class="blue-box">
+          14
+        </div>
+      </div>
+      <div class="flex-notif">
+        <div style="font-size: 17px;">
+          Notifications
+        </div>
+        <div class="blue-box">
+          3
+        </div>
+      </div>
+      <div class="flex-notif">
+        <div style="font-size: 17px;">
+          Messages
+        </div>
+        <div class="blue-box">
+          5
+        </div>
+      </div>
+    </div>
+
+
+    <div class="header">
+      <div style="
+        padding-left: 10px;
+        padding-right: 80px;
+        color: white;
+        font-weight: bold;
+        width: 55px;">
+        Home
+      </div>
+      <div class="middle-section">
+        <input style="
+          height: 24px;
+          display: block;
+          border-radius: 13px;
+          border: none;
+          width: 100%;" type="text" placeholder="Search">
+      </div>
+      <div style="
+      padding-right: 5px;
+      width: 80px;
+      padding-left: 80px;">
+        <button style="
+        color: white;
+        background-color: rgb(98,71,144);
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        height: 32px;
+        width: 80px;
+        cursor: pointer;">
+        Download
+      </button>
+      </div>
+    </div>
+
+
+
+    <div style="margin-top: 40px;">
+      <div class="account-row">
+        <div style="width: 80px;">
+          <img class="thumbnail4" src="cat-image.jpg">
+        </div>
+        <div style="flex: 1;">
+          <div style="font-weight: bold;">
+            Oliver
+          </div>
+          <div style="color: grey; font-size: 14px; margin-top: 4px; margin-bottom: 4px;">
+            the cat
+          </div>
+          <div style="color: grey; font-size: small;">
+            Popular
+          </div>
+        </div>
+        <div style="width: 100px;">
+          <button class="follow-button">
+            Follow
+          </button>
+        </div>
+      </div>
+
+      <div class="account-row">
+        <div style="width: 80px;">
+          <img class="thumbnail5" src="cat3.jpg">
+        </div>
+        <div style="flex: 1;">
+          <div style="font-weight: bold;">
+            Mimi
+          </div>
+          <div style="color: grey; font-size: 14px; margin-top: 4px; margin-bottom: 4px;">
+            Sleepy Cat
+          </div>
+          <div style="color: grey; font-size: small;">
+            Popular
+          </div>
+        </div>
+        <div style="width: 100px;">
+          <button class="follow-button">
+            Follow
+          </button>
+        </div>
+      </div>
+
+      <div class="account-row">
+        <div style="width: 80px;">
+          <img class="thumbnail5" src="dog1.jpg">
+        </div>
+        <div style="flex: 1;">
+          <div style="font-weight: bold;">
+            Rex
+          </div>
+          <div style="color: grey; font-size: 14px; margin-top: 4px; margin-bottom: 4px;">
+            Happy Bulldog
+          </div>
+          <div style="color: grey; font-size: small;">
+            Popular
+          </div>
+        </div>
+        <div style="width: 100px;">
+          <button class="follow-button">
+            Follow
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="
+      margin-top: 30px;
+      height: 60px;
+      display: flex;
+      ">
+      <div style="
+      background-color: lightpink;
+      width: 100px;
+      display: flex;
+      align-items: center;">
+        <div style="
+        color: white;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;">
+          item1
+        </div>
+      </div>
+      <div style="
+      background-color: lightblue;
+      width: 200px;">
+      </div>
+    </div>
+    
+
+    <div style="
+      margin-top: 30px;
+      height: 60px;
+      display: flex;
+      ">
+      <div style="
+      background-color: lightpink;
+      width: 100px;">
+      </div>
+
+      <div style="
+      background-color: lightblue;
+      width: 200px;
+      display: flex;
+      flex-direction: column;">
+          <div>row1</div>
+          <div style="display: flex;
+          justify-content: space-between;">
+            <div style="
+            color: white;
+            background-color: black;">
+              row2
+            </div>
+            <div style="
+            color: white;
+            background-color: black;">
+              row2
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div style="margin-top: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);">
+      <div style="color: grey;
+      font-size: 12px;
+      margin-bottom: 10px;">
+        ALL INBOXES
+      </div>
+      <div>
+        <div class="account-row" style="margin-top: 15px;">
+          <div style="width: 60px;">
+            <img class="thumbnail6" src="cat-image.jpg">
+          </div>
+          <div style="flex: 1;">
+            <div style="display:flex; justify-content: space-between; align-items: center;">
+              <div style="font-weight: bolder;">
+                Chewy Promotions
+              </div>
+              <div style="color: grey; font-size: 12px;">
+                4:58 PM
+              </div>
+            </div>
+            <div style="font-weight: bolder; font-size: 13px; margin-top: 4px; margin-bottom: 4px;">
+              Biggest sales of the year!
+            </div>
+            <div style="color: grey; font-size: small;">
+              Hey there! We're writing to tell you about our...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="account-row" style="margin-top: 15px;">
+          <div style="width: 60px;">
+            <img class="thumbnail6" style="object-position: center;" src="dog1.jpg">
+          </div>
+          <div style="flex: 1;">
+            <div style="display:flex; justify-content: space-between; align-items: center;">
+              <div style="font-weight: bolder;">
+                Best Buy
+              </div>
+              <div style="color: grey; font-size: 12px;">
+                12:32 PM
+              </div>
+            </div>
+            <div style="font-weight: bolder; font-size: 13px; margin-top: 4px; margin-bottom: 4px;">
+              Your Best Buy eReceipt
+            </div>
+            <div style="color: grey; font-size: small;">
+              Thank you for shopping at Best Buy, here is...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="account-row" style="margin-top: 15px;">
+          <div style="width: 60px;">
+            <img class="thumbnail6" style="object-position: center;" src="cat3.jpg">
+          </div>
+          <div style="flex: 1;">
+            <div style="display:flex; justify-content: space-between; align-items: center;">
+              <div style="font-weight: bolder;">
+                Netflix
+              </div>
+              <div style="color: grey; font-size: 12px;">
+                9:00 AM
+              </div>
+            </div>
+            <div style="font-weight: bolder; font-size: 13px; margin-top: 4px; margin-bottom: 4px;">
+              Here's what's coming soon to Netflix
+            </div>
+            <div style="color: grey; font-size: small;">
+              Brand new movies and shows, old favorites...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <div class="account-row2">
+        <div style="width: 60px; padding-top: 0px;">
+          <img class="thumbnail6" src="cat-image.jpg">
+        </div>
+        <div style="width: 315px;">
+          <div style="display:flex;">
+            <div style="font-weight: bold; font-size: 13px;">
+              supersimple.dev
+            </div>
+            <div style="color: grey; font-size: 12px;">
+              &#64;SuperSimpleDev
+            </div>
+          </div>
+          <div style="font-size: 13px; margin-top: 4px; margin-bottom: 4px;">
+            What is backend web development? A complete overview. new video is up!
+          </div>
+
+          <div style="display: flex;
+          width: 310px;
+          height: 80px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: rgb(220, 220, 220);
+          border-radius: 15px;
+          overflow: hidden;
+          align-items: center;
+          margin-top: 10px;
+          ">
+            <div style="width: 75px;
+            height: 100px;
+            background-color: rgb(220, 220, 220);">
+            </div>
+            <div style="flex: 1; padding: 8px;">
+              <div style="color: rgb(112, 112, 112); font-size: 14px; margin-bottom: 4px;">
+                youtube.com
+              </div>
+              <div style="font-size: 15px;">
+                Backend web development - a complete overview (2021)
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

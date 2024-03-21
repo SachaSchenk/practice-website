@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        margin-top: 0;
+        font-family: Arial;
+      }
+
+      .div-example1 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+
+      .div-example2 {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        text-align: center;
+      }
+
+      .bordered {
+        display: inline-block;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-style: solid;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .grey-box {
+        display: inline-block;
+        background-color: rgb(31,31,31);
+        width: 320px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 22px;
+        padding-bottom: 18px;
+      }
+
+      .yt-text {
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      .yt-text2 {
+        color: rgb(136,136,136);
+        margin-bottom: 0;
+      }
+
+      .thumbnail4,
+      .thumbnail5 {
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      .thumbnail4 {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-position: right;
+      }
+
+      .thumbnail5 {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        object-position: center;
+      }
+
+      .search-bar4 {
+        height: 40px;
+        padding-left: 12px;
+        padding-right: 80px;
+        font-size: 16px;
+        border: none;
+        vertical-align: middle;
+      }
+
+      .tweet-button {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+        vertical-align: middle;
+      }
+
+      .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .shadow-search {
+        display: inline-block;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .thumbnail1, .thumbnail2 {
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 0px;
+      }
+
+      .thumbnail1 {
+        object-position: right;
+      }
+
+      .thumbnail2 {
+        object-position: center;
+      }
+
+      .fb-friend, .fb-friend2 {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 14px;
+      }
+
+      .fb-friend2{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .fb-text, .fb-text2{
+        margin-top: 0px;
+        padding-top: 10px;
+        padding-left: 8px;
+        padding-bottom: 8px;
+      }
+
+      .fb-text{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .fb-box-shadow {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .add-friend {
+        background-color: rgb(56,116,225);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        width: 100px;
+        display: block;
+        transition: box-shadow 0.15s;
+      }
+
+      .add-friend:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .fb-title {
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      .fb-subtitle {
+        font-size: 13px;
+        color: grey;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        display: inline-block;
+      }
+
+      .pic-mut {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-example1">
+      This is a div.
+    </div>
+
+    <div class="div-example2">
+      This is a div.
+    </div>
+
+    <div class="bordered">
+      <p>
+        Satisfied with our service?
+      </p>
+
+      <button class="button">
+        Yes
+      </button>
+  
+      <button class="button">
+        No
+      </button>
+    </div>
+
+    <p></p>
+
+    <div class="grey-box">
+      <p class="yt-text">
+        Install Youtube Music
+      </p>
+
+      <p class="yt-text2">
+        Add YouTube to your desktop for quick and easy access
+      </p>
+    </div>
+
+    <p></p>
+
+    <div class="shadow-search">
+      <img class="thumbnail4" src="cat-image.jpg">
+      <input class="search-bar4" type="text" placeholder="What's happening?">
+      <button class="tweet-button">
+        Tweet
+      </button>
+    </div>
+
+    <div>
+      <div class="fb-friend">
+        <img class="thumbnail1" src="cat-image.jpg">
+
+        <div class="fb-text">
+          <p class="fb-title">
+            Oliver
+          </p>
+    
+          <div class="pic-mut">
+            <img class="thumbnail5" src="dog1.jpg">
+            <p class="fb-subtitle">
+              2 mutual friends
+            </p>
+          </div>
+    
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+
+      </div>
+
+      <div class="fb-friend2">
+        <img class="thumbnail2" src="cat2.jpg">
+
+        <div class="fb-text2">
+          <p class="fb-title">
+            Mimi
+          </p>
+    
+          <div class="pic-mut">
+            <img class="thumbnail5" src="dog1.jpg">
+            <p class="fb-subtitle">
+              3 mutual friends
+            </p>
+          </div>
+    
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+
+      </div>
+
+      <div class="fb-friend">
+        <img class="thumbnail2" src="cat3.jpg">
+
+        <div class="fb-text">
+          <p class="fb-title">
+            Rex
+          </p>
+    
+          <div class="pic-mut">
+            <img class="thumbnail5" src="dog1.jpg">
+            <p class="fb-subtitle">
+              4 mutual friends
+            </p>
+          </div>
+    
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <div style="
+        margin-top: 30px;
+        margin-left: 14px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 14px;">
+
+      <div class="fb-box-shadow">
+        <img class="thumbnail1" src="cat-image.jpg">
+
+        <div class="fb-text2">
+          <p class="fb-title">
+            Oliver
+          </p>
+    
+          <div class="pic-mut">
+            <img class="thumbnail5" src="dog1.jpg">
+            <p class="fb-subtitle">
+              2 mutual friends
+            </p>
+          </div>
+    
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+
+      </div>
+
+      <div class="fb-box-shadow">
+        <img class="thumbnail2" src="cat2.jpg">
+
+        <div class="fb-text2">
+          <p class="fb-title">
+            Mimi
+          </p>
+    
+          <div class="pic-mut">
+            <img class="thumbnail5" src="dog1.jpg">
+            <p class="fb-subtitle">
+              3 mutual friends
+            </p>
+          </div>
+    
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+
+      </div>
+
+      <div class="fb-box-shadow">
+        <img class="thumbnail2" src="cat3.jpg">
+
+        <div class="fb-text2">
+          <p class="fb-title">
+            Rex
+          </p>
+    
+          <div class="pic-mut">
+            <img class="thumbnail5" src="dog1.jpg">
+            <p class="fb-subtitle">
+              4 mutual friends
+            </p>
+          </div>
+    
+          <button class="add-friend">
+            Add Friend
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
